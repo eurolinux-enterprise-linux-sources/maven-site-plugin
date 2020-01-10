@@ -1,6 +1,6 @@
 Name:           maven-site-plugin
 Version:        3.2
-Release:        7%{?dist}
+Release:        5%{?dist}
 Summary:        Maven Site Plugin
 
 Group:          Development/Libraries
@@ -43,6 +43,7 @@ BuildRequires: maven-plugin-testing-harness
 BuildRequires: maven-wagon
 BuildRequires: maven-reporting-exec
 BuildRequires: plexus-containers-component-metadata
+BuildRequires: jetty >= 9.0.0-0.1.RC0
 BuildRequires: jetty-client >= 9.0.0-0.1.RC0
 BuildRequires: jetty-server >= 9.0.0-0.1.RC0
 BuildRequires: jetty-servlet >= 9.0.0-0.1.RC0
@@ -89,12 +90,6 @@ API documentation for %{name}.
 %doc LICENSE NOTICE
 
 %changelog
-* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 3.2-7
-- Mass rebuild 2013-12-27
-
-* Wed Nov 13 2013 Mikolaj Izdebski <mizdebsk@redhat.com> - 3.2-6
-- Remove BR on main jetty package
-
 * Fri Jun 28 2013 Mikolaj Izdebski <mizdebsk@redhat.com> - 3.2-5
 - Rebuild to regenerate API documentation
 - Resolves: CVE-2013-1571
